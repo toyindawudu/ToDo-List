@@ -3,3 +3,49 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-image:linear-gradient(120deg,#f8bdb1, #c2c4de);
+  color: white;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+header, form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input, form button{
+  margin: 0.5rem;
+  /* border-color: black; */
+  border:none;
+  padding: .5rem;
+  font-size: 1.8rem;
+  background: white;
+}
+
+form button {
+  cursor: pointer;
+  color: black;
+  background: white;
+  transition: all 0.3s ease;
+
+}
+
+
+form button:hover {
+  background: #f8bdb1;
+  color: white;
+
+}
+
+
+
+
