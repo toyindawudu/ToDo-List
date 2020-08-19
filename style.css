@@ -39,13 +39,94 @@ form button {
 
 }
 
-
 form button:hover {
   background: #f8bdb1;
   color: white;
-
 }
 
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.todo-list{
+  min-width: 20%;
+  list-style: none;
+}
 
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.1s ease;
+}
 
+/* .todo li {
+  flex: 1;
+} */
+
+.delete-btn, .complete-btn {
+  background: rgb(212, 51, 51);
+  color:white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.complete-btn {
+  background: green;
+}
+
+.todo-item {
+  padding: 0.5rem;
+  margin: auto;
+}
+
+.fa-trash, .fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  cursor: pointer;
+  width: 10rem;
+  padding: 0.5rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: black;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  pointer-events: none;
+
+}
