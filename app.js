@@ -23,7 +23,6 @@ function addTodo(event){
   const newTodo = document.createElement('li');
   newTodo.innerText = todoInput.value;
   newTodo.classList.add('todo-item');
-  // newTodo.classList.add('Hey');
   todoDiv.appendChild(newTodo);
 
   // Create checked button
@@ -64,8 +63,52 @@ function deleteItem(event){
   }
 }
 
-function filterTodo(e) {
-  const todos = todoList.childNodes;
+// function filterTodo(e) {
+//   const todos = todoList.childNodes;
+//   todos.forEach(function(todo){
+//     switch(e.target.value){
+//       case "all":
+//         todo.style.display = "flex";
+//         break;
+//       case "completed":
+//         if(todo.classList.contains("completed")){
+//           todo.style.display = "flex";
+//         } else {
+//           todo.style.display = "none";
+//         }
+//         break;
+//       case "uncompleted":
+//         if(!todo.classList.contains("uncompleted")){
+//           todo.style.display = 'flex';
+//         } else {
+//           todo.style.display = "none";
+//         }
+//         break;
+//     }
+//   });
+// }
 
-  console.log(todos);
+function filterTodo(e){
+  const todos = todoList.childNodes;
+  todos.forEach(function(todo){
+    switch(e.target.value){
+      case "all":
+        todo.style.display = 'flex';
+        break;
+      case "completed":
+        if(todo.classList.contains('completed')){
+          todo.style.display = 'flex';
+        } else {
+          todo.style.display = 'none';
+        }
+        break;
+      case "uncompleted":
+        if(!todo.classList.contains('completed')){
+          todo.style.display = 'flex';
+        } else {
+          todo.style.display = 'none';
+        }
+        break;
+    }
+  });
 }

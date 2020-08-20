@@ -75,6 +75,7 @@ form button:hover {
   border: none;
   padding: 1rem;
   cursor: pointer;
+  margin-right: 0.3rem;
 }
 
 .complete-btn {
@@ -84,6 +85,7 @@ form button:hover {
 .todo-item {
   padding: 0.5rem;
   margin: auto;
+  font-size: 2rem;
 }
 
 .fa-trash, .fa-check {
