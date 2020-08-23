@@ -130,4 +130,10 @@ select {
   right: 0;
   padding: 0.5rem;
   pointer-events: none;
+  transition: all .3s ease;
+}
+
+.select:hover::after {
+  background: white;
+  color: black;
 }
